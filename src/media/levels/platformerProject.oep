@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <OgmoVersion>2.0.0.40</OgmoVersion>
+  <OgmoVersion>2.1.0.6</OgmoVersion>
   <Name>PlatformerExample</Name>
   <BackgroundColor A="255" R="125" G="160" B="255" />
   <GridColor A="255" R="255" G="240" B="90" />
@@ -16,7 +16,7 @@
     <Width>800</Width>
     <Height>600</Height>
   </LevelMaximumSize>
-  <Filename>D:\projects\myRepo\Flash Games\StarlingPunkExample\src\media\levels\platformerProject.oep</Filename>
+  <Filename>C:\Users\Ben\Documents\GitHub\StarlingPunk-Spine-And-Frame-Animations\src\media\levels\platformerProject.oep</Filename>
   <AngleMode>Radians</AngleMode>
   <CameraEnabled>false</CameraEnabled>
   <CameraSize>
