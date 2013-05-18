@@ -18,7 +18,10 @@ Libraries
 
 While I have included the Spine Starling & Spine AS3 runtimes, Starling and StarlingPunk itself these are all available independently and may be more up-to-date.
 
-Spine-AS3: https://github.com/EsotericSoftware/spine-runtimes/tree/master/spine-as3
-Spine-Starling: https://github.com/EsotericSoftware/spine-runtimes/tree/master/spine-starling
-Starling: https://github.com/PrimaryFeather/Starling-Framework
-StarlingPunk: https://github.com/asaia/StarlingPunk
+- Spine-AS3: https://github.com/EsotericSoftware/spine-runtimes/tree/master/spine-as3
+
+- Spine-Starling: https://github.com/EsotericSoftware/spine-runtimes/tree/master/spine-starling
+
+- Starling: https://github.com/PrimaryFeather/Starling-Framework
+
+- StarlingPunk: https://github.com/asaia/StarlingPunk
