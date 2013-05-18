@@ -7,8 +7,8 @@ The only files needed to run a Spine animation if you have an existing SP projec
 
 However, if you want to see a usage example for the class there are two example entities:
 
-```entities.GreenGuy.as
-entities.SpineBoy.as```
+```entities.GreenGuy.as```
+```entities.SpineBoy.as```
   
 This shows how to extend the class correctly.
 
