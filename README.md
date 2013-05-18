@@ -15,7 +15,7 @@ This shows how to extend the class correctly.
 
 This repositary also includes the ```com.voltic.SPAnimatedEntity.as``` class which has a whole bunch of features for frame based animation sequences.
 
-```entities.BurgerFlag``` shows a proper implemetation of the class.
+```entities.BurgerFlag.as``` shows a proper implemetation of the class.
 
 Also; ```com.saia.starlingPunkExamples.platformer.worlds.PlatformerLevelOne.as``` shows how to add an ```SPSkeletonEntity``` and an ```SPAnimatedEntity``` to the world. But, it is exactly the same as adding a normal entity is.
 
