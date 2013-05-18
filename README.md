@@ -1,4 +1,4 @@
-StarlingPunk-Spine-Runtime-Implementation
+StarlingPunk Animation Classes for Spine and Frame Based Animation
 =========================================
 
 For the main classes go here: https://github.com/volticgames/StarlingPunk-Spine-And-Frame-Animations/tree/master/src/com/voltic/starlingpunk
