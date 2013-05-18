@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:51d0ee8a7d6038de5d2e826f3c84bfad$ -->
+<TextureAtlas imagePath="GreenGuy.png">
+    <SubTexture name="body" x="2" y="2" width="32" height="32"/>
+    <SubTexture name="head" x="2" y="36" width="32" height="32"/>
+    <SubTexture name="leg" x="2" y="70" width="32" height="32"/>
+</TextureAtlas>
