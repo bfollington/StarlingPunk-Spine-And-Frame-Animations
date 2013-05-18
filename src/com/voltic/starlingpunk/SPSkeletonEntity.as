@@ -21,7 +21,7 @@ package com.voltic.starlingpunk
 	 * An implementation of an SPEntity that uses a Spine animation
 	 * for its graphical display.
 	 */
-	public class SkeletonSPEntity extends SPEntity 
+	public class SPSkeletonEntity extends SPEntity 
 	{
 		
 		protected var skeleton:SkeletonAnimationSprite;
@@ -35,7 +35,7 @@ package com.voltic.starlingpunk
 		 * the provided methods.
 		 * 
 		 */
-		public function SkeletonSPEntity(x:Number=0, y:Number=0, name:String="", xml:Object=null, texture:Bitmap=null, json:Object=null) 
+		public function SPSkeletonEntity(x:Number=0, y:Number=0, name:String="", xml:Object=null, texture:Bitmap=null, json:Object=null) 
 		{
 			super(x, y, name);
 			setXml(xml);

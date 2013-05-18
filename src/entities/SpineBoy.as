@@ -4,14 +4,14 @@ package entities
 	import com.saia.starlingPunk.utils.Key;
 	import com.saia.starlingPunk.utils.SPInput;
 	import com.saia.starlingPunkExamples.platformer.entities.PlatformerPlayer;
-	import com.voltic.starlingpunk.SkeletonSPEntity;
+	import com.voltic.starlingpunk.SPSkeletonEntity;
 	import com.voltic.starlingpunk.WorldUtil;
 	
 	import media.Assets;
 	
 	import spine.AnimationStateData;
 	
-	public class SpineBoy extends SkeletonSPEntity
+	public class SpineBoy extends SPSkeletonEntity
 	{
 		
 		public function SpineBoy(x:Number=0, y:Number=0)

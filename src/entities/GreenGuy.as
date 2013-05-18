@@ -4,10 +4,10 @@ package entities
 	
 	import com.saia.starlingPunk.SPEntity;
 	import com.saia.starlingPunkExamples.platformer.entities.PlatformerPlayer;
-	import com.voltic.starlingpunk.SkeletonSPEntity;
+	import com.voltic.starlingpunk.SPSkeletonEntity;
 	import com.voltic.starlingpunk.WorldUtil;
 	
-	public class GreenGuy extends SkeletonSPEntity
+	public class GreenGuy extends SPSkeletonEntity
 	{
 		
 		private var player:SPEntity;
