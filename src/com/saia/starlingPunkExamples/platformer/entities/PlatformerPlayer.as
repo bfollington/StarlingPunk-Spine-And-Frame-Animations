@@ -6,10 +6,15 @@ package com.saia.starlingPunkExamples.platformer.entities
 	import com.saia.starlingPunk.utils.SPInput;
 	import com.saia.starlingPunkExamples.embeds.ExampleAssets;
 	import com.saia.starlingPunkExamples.platformer.controllers.LevelController;
+	
 	import flash.geom.Point;
+	
 	import starling.display.Image;
+	import starling.display.MovieClip;
 	import starling.textures.Texture;
 	import starling.textures.TextureAtlas;
+	
+	import starling.core.Starling;
 	
 	/**
 	 * ...
@@ -27,6 +32,11 @@ package com.saia.starlingPunkExamples.platformer.entities
 		private var _vel:Point;
 		private var _isJumpReleased:Boolean;
 		private var _isCameraEnabled:Boolean
+		
+		private var animationFrames:Vector.<Texture> = new <Texture>[];
+		private var animations:Vector.<MovieClip> = new <MovieClip>[];
+		
+		private var animation:Number = 0;
 		
 		public function PlatformerPlayer() 
 		{
@@ -74,6 +84,7 @@ package com.saia.starlingPunkExamples.platformer.entities
 				else
 					enableCamera();
 			}
+			
 		}
 		
 		//-------------------
@@ -172,10 +183,26 @@ package com.saia.starlingPunkExamples.platformer.entities
 		private function setupGraphic():void 
 		{
 			var textureAtlas:TextureAtlas = new TextureAtlas(Texture.fromBitmap(new ExampleAssets.ATLAS_TEXTURE()), XML(new ExampleAssets.ATLAS_DATA()));
-			var image:Image = new Image(textureAtlas.getTexture("burger"));
-			addChild(image);
+			
+			animationFrames.push(textureAtlas.getTexture("burger"));
+			animationFrames.push(textureAtlas.getTexture("goal"));
+			
+			animations.push(new MovieClip(new <Texture>[animationFrames[0], animationFrames[1]], 7));
+			animations[0].loop = true;
+				
+			setAnimation(0);
 		}
 		
+		private function setAnimation(anim:Number):void
+		{
+			removeChild(animations[animation]);
+			Starling.juggler.remove(animations[animation]);
+			
+			animation = anim;
+			addChild(animations[animation]);
+			Starling.juggler.add(animations[animation]);	
+		}
+
 		private function updateCamera():void 
 		{
 			if (!_isCameraEnabled) return;
