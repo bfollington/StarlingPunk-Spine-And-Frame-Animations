@@ -24,7 +24,7 @@ package entities
 			super.added();
 		}
 		
-		override public function setupAnimations():void
+		override protected function setupAnimations():void
 		{
 			skeleton.setAnimation("Run", true);
 		}

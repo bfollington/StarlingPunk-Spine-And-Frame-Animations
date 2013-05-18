@@ -98,6 +98,12 @@ package com.voltic.starlingpunk
 		//-------------------
 		
 		
+		/**
+		 * Load a Spine animation file from the files provided.
+		 * 
+		 * This is basically just copy&paste from the Esoteric Software example 
+		 * 
+		 */
 		private function setupSkeleton():void 
 		{	
 			var texture:Texture = Texture.fromBitmap(atlasTexture);
@@ -119,7 +125,18 @@ package com.voltic.starlingpunk
 			skeleton.y = 0;
 		}
 		
-		public function setupMixing(stateData:AnimationStateData):void
+		/**
+		 * Set the animation mixing settings here.
+		 * 
+		 * Animation mixing is (I believe) the process of changing from
+		 * one animation to another. 
+		 * 
+		 * The Spine runtime has... Very sparse comments.
+		 * 
+		 * @param stateData 
+		 * 
+		 */
+		protected function setupMixing(stateData:AnimationStateData):void
 		{
 			//Mixing goes here
 			//Looks like:
@@ -128,7 +145,11 @@ package com.voltic.starlingpunk
 			//stateData.setMixByName("jump", "jump", 0.2);
 		}
 		
-		public function setupAnimations():void
+		/**
+		 * Override this. Look within function body for example code. 
+		 * 
+		 */
+		protected function setupAnimations():void
 		{
 			//Animations would go here
 			//Looks like: skeleton.setAnimation("Run", true);

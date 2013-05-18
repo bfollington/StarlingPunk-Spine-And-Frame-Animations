@@ -46,14 +46,14 @@ package entities
 			
 		}
 		
-		override public function setupMixing(stateData:AnimationStateData):void
+		override protected function setupMixing(stateData:AnimationStateData):void
 		{
 			stateData.setMixByName("walk", "jump", 0.2);
 			stateData.setMixByName("jump", "walk", 0.4);
 			stateData.setMixByName("jump", "jump", 0.2);
 		}
 		
-		override public function setupAnimations():void
+		override protected function setupAnimations():void
 		{
 			skeleton.setAnimation("walk", true);
 			skeleton.addAnimation("jump", false, 3);
