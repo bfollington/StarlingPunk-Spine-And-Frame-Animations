@@ -81,12 +81,15 @@ package com.voltic.starlingpunk
 		 * Get all frames staring with a certain prefix from an atlas. 
 		 * @param atlas Which atlas to read from
 		 * @param prefix The prefix of the frames
-		 * @return A Vector of Frames matching
+		 * @return An array of Frames matching
 		 * 
 		 */
-		protected function getFrames(atlas:TextureAtlas, prefix:String):Vector.<Texture>
+		protected function getFrames(atlas:TextureAtlas, prefix:String):Array
 		{
-			return atlas.getTextures(prefix);
+			var ret:Array = [];
+			for each (var elem:Texture in atlas.getTextures(prefix)) ret.push(elem);
+			
+			return ret;
 		}
 		
 		/**
